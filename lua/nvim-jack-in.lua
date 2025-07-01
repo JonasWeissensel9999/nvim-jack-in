@@ -71,7 +71,7 @@ end
 local function lein_string(args)
   if args == nil then args = '' end
 
-  return "lein update-in :plugins conj '[" .. map_lein_plugins_to_string() .. "]' -- repl" .. args
+  return "lein update-in :plugins conj '[" .. map_lein_plugins_to_string() .. "]' -- repl " .. args
 end
 
 local function jack_in(execution_string)
